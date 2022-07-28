@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <img src="images/pic3.jpg" class="bg" alt="" />
+    <div class="container main-body">
+      <div class="row">
+        <div
+          class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 all-content"
+        >
+          <form id="inputCity">
+            <div class="row">
+              <div class="col-6 input-city">
+                <input
+                  type="text"
+                  id="user-city"
+                  class="form-control form-custom"
+                  placeholder="Enter city"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" class="button" value="Search" />
+              </div>
+              <div class="col-3 current">
+                <button class="button" id="current">Current</button>
+              </div>
+            </div>
+          </form>
+          <div class="row bg-main text-md-left text-xs-center">
+            <div class="col-6 col-md-6">
+              <div class="city" id="city">Rome</div>
+              <div class="current-temp" id="currentTemp">31</div>
+
+              <a href="" class="misure" id="celsius">°C</a>
+              <a href="" class="misure line" id="fahrenheit">°F</a>
+
+              <span class="date" id="date"> Tuesday 15:18</span>
+
+              <div class="condition" id="condition">Mostly sunny</div>
+            </div>
+            <ul class="col-6 col-md-6 text-center text-md-right humWind">
+              <li class="humidity">
+                Humidity: <span id="humidity">59% </span>
+              </li>
+              <li class="wind">Wind: <span id="wind">6 km/h </span></li>
+            </ul>
+          </div>
+          <div class="row days-box">
+            <div class="col-2">
+              <div class="first-day">Fri</div>
+              <div>
+                <img
+                  class="icon icon-first-day"
+                  src="images/icons/cloud-lightning.png"
+                  alt="cloud-lightning"
+                />
+              </div>
+              <div class="first-day-temp">+25°C</div>
+            </div>
+            <div class="col-2">
+              <div class="second-day">Sat</div>
+              <div>
+                <img
+                  class="icon icon-second-day-day"
+                  src="images/icons/heavy-rain.png"
+                  alt="heavy-rain"
+                />
+              </div>
+              <div class="second-day-temp">+24°C</div>
+            </div>
+            <div class="col-2">
+              <div class="third-day">Sun</div>
+              <div>
+                <img
+                  class="icon icon-third-day"
+                  src="images/icons/partly-cloudy-day.png"
+                  alt="partly-cloudy-day"
+                />
+              </div>
+              <div class="third-day-temp">+30°C</div>
+            </div>
+            <div class="col-2">
+              <div class="fourth-day">Mon</div>
+              <div>
+                <img
+                  class="icon icon-fourth-day"
+                  src="images/icons/sun.png"
+                  alt="sun"
+                />
+              </div>
+              <div class="fourth-day-temp">+31°C</div>
+            </div>
+            <div class="col-2">
+              <div class="fifth-day">Tue</div>
+              <div>
+                <img
+                  class="icon icon-fifth-day"
+                  src="images/icons/sun.png"
+                  alt="sun"
+                />
+              </div>
+              <div class="fifth-day-temp">+34°C</div>
+            </div>
+            <div class="col-2">
+              <div class="sixth-day">Wed</div>
+              <div>
+                <img
+                  class="icon icon-sixth-day"
+                  src="images/icons/partly-cloudy-day.png"
+                  alt="partly-cloudy-day"
+                />
+              </div>
+              <div class="sixth-day-temp">+32°C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
