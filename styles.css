@@ -204,3 +204,6 @@ li {
   line-height: 1;
   list-style: none;
 }
+.sign {
+  position: relative;
+}
